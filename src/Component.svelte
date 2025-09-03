@@ -94,7 +94,7 @@
   // Initialise selected values if fieldState?.value is present
   $: if (fieldState?.value) {
     if (type === 'string') {
-      selectedLabels = [{ label: fieldState.value }];
+      selectedLabels = [{ label: fieldState.label }];
       selectedValues = [{ value: fieldState.value }];
     } else {
       selectedLabels = fieldState.value.map(item => ({ label: item[labelColumn] }));
